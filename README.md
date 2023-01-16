@@ -4,6 +4,14 @@
 * `cupsRequestBody` is a `wireshark`-dumped http-body of `GetPrinters` request to CUPS.
 * `printers.conf` contains **1446** printers defined.
 
+# run local CUPS instance in a container
+
+```bash
+docker-compose up -d
+```
+
+# run test cases
+
 ## TestMainDirect test
 
 direct http.Response.Body parsing, without buffering
