@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  cups:
+    image: olbat/cupsd
+    volumes:
+      - './testdata/cups/cupsd.conf:/etc/cups/cupsd.conf:ro'
+      - './testdata/cups/printers.conf:/etc/cups/printers.conf:ro'
+    ports:
+      - '10631:10631'
